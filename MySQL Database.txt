@@ -1,0 +1,19 @@
+CREATE DATABASE government_portal;
+
+USE government_portal;
+
+CREATE TABLE users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(100),
+password VARCHAR(100),
+aadhaar VARCHAR(20)
+);
+
+CREATE TABLE complaints(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+department VARCHAR(100),
+complaint TEXT,
+status VARCHAR(50)
+);
